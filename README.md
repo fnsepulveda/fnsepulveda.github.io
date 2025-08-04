@@ -10,8 +10,8 @@ The website is live at: [https://fnsepulveda.github.io](https://fnsepulveda.gith
 
 ## Structure
 
-•⁠  ⁠⁠ index_JF.html ⁠: The main webpage file, which includes sections like About, Research, CV, and Contact.
-•⁠  ⁠⁠ style_JF.css ⁠: The stylesheet that defines the appearance and layout of the website.
+•⁠  ⁠⁠ index.html ⁠: The main webpage file, which includes sections like About, Research, CV, and Contact.
+•⁠  ⁠⁠ style.css ⁠: The stylesheet that defines the appearance and layout of the website.
 •⁠  ⁠⁠ your-cv.pdf ⁠: My curriculum vitae, available for download.
 
 ## How to Use
