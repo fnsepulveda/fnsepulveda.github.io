@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joaquín Fuenzalida</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HBXYMSEGRE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HBXYMSEGRE');
+    </script>
+    <!-- End Google Analytics -->
+</head>
+<body>
+
+    <!-- Header with Profile Picture on the Left, Name below, and Description on the Right -->
+    <header>
+        <div class="header-container">
+            <!-- Picture on the Left -->
+            <div class="profile-picture">
+                <img src="picture1.png" alt="Joaquín Fuenzalida">
+                <h1>Joaquín Fuenzalida</h1>
+            </div>
+
+            <!-- Description on the Right -->
+            <div class="description">
+                <p>
+                    I am a PhD candidate at the University of California, Berkeley. I am an applied microeconomist, and my research focuses on the effects of public policy in Latin America, with special emphasis on education. Prior to coming to Berkeley, I received my B.A. and M.A. in Economics at Pontificia Universidad Católica de Chile.
+                </p>
+                <p style="margin-top: 0;">I am currently on the Job Market 2024-2025.</p>
+                <p style="margin-top: 10px;">
+                    Email: <a href="mailto:jfuenzalida@berkeley.edu">jfuenzalida@berkeley.edu</a> | Office 524, Evans Hall, UC Berkeley
+                </p>
+                <!-- LinkedIn and Twitter links -->
+                <p>
+                    <a href="https://www.linkedin.com/in/joaquin-fuenzalida-2aa002136/" target="_blank">LinkedIn</a> |
+                    <a href="https://x.com/JiFuenzalida" target="_blank">Twitter</a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation (For easy scroll navigation) -->
+    <nav>
+        <ul>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+   <!-- Research Section -->
+<section id="research">
+    <h2>Research</h2>
+    
+    <!-- Working Papers Section -->
+    <h3 id="working-papers">Working Papers</h3>
+    <ul>
+        <li class="paper-title" onclick="togglePaperDetails('paper1')">
+            <strong>The Effect of a Homebuyer Subsidy on Children [Job Market Paper]</strong> <span class="arrow">&#9662;</span>
+        </li>
+        <div id="paper1" class="paper-details">
+            <p>Co-authors: Felipe Vial and Harrison Wheeler</p>
+            <p>Homeownership has been proposed as a key channel shaping intergenerational mobility. In this paper, we explore one potential mechanism for this effect: that homeownership and housing stability, more generally, could increase human capital formation in children. 
+We study a large, novel housing policy- a homebuyer subsidy for low-income families in Santiago, Chile. We leverage an arbitrary discontinuity in subsidy assignment to estimate the causal impacts of homeownership on a wide array of primary, secondary, and tertiary education outcomes for children. We find that children in marginally eligible families significantly improve their attendance, grades, class ranks, and achievement test scores relative to children in families that narrowly miss the cutoff. The gains are larger for boys than girls and are no different between younger and older children. Our findings are not driven by sorting into different schools or changes in neighborhood quality. The gains are more pronounced for children in larger families, suggesting that alleviating overcrowded living conditions is an important mediator of the program’s effects. Subsidy-winning parents reduce their labor market participation, are more actively involved in their children's schooling, and have higher educational aspirations for them. We find that, early in life, the subsidy increases children’s preschool attendance, and later in life, children graduate high school and attend college at higher rates. Those who have left school also have higher employment rates. In all, we find that homebuyer subsidies are a promising tool for improving the economic fortunes of children from vulnerable families. </p>
+            <a href="JMP_Draft.pdf" target="_blank">Download Draft</a>
+            <div style="margin-top: 40px;"></div>
+        </div>
+        <li class="paper-title" onclick="togglePaperDetails('paper2')">
+            <strong>The Effects of Widespread Online Education on Market Structure and Enrollment</strong> <span class="arrow">&#9662;</span>
+        </li>
+        <div id="paper2" class="paper-details">
+            <p>Co-authors: Nano Barahona, Cauê Dobbin, and Sebastián Otero</p>
+            <p>We examine the rapid growth of Brazil's private online higher education sector and its impact on market structure and college enrollment. Exploiting regional and field-specific variation in online education penetration, we find that online programs increase enrollment for older students but divert younger students from higher-quality in-person programs. Increased competition lowers the prices of in-person programs but leads to a decline in their provision. Using an equilibrium model of college education, we quantify that, in the absence of online education, the average student would experience 3.4% higher value added. While young students benefit from fewer online options, older students are disadvantaged. Targeted policies limiting online education to older cohorts have the potential to improve value-added across all age groups.</p>
+            <a href="onlineeduc.pdf" target="_blank">Download Draft</a>
+            <div style="margin-top: 40px;"></div>
+        </div>
+    </ul>
+
+    <!-- Space between Working Papers and Work in Progress -->
+    <div style="margin-top: 40px;"></div>
+
+    <!-- Selected Work in Progress Section -->
+    <h3 id="work-in-progress">Selected Work in Progress</h3>
+    <ul>
+        <li class="paper-title" onclick="togglePaperDetails('paper3')">
+            <strong>The Role of Housing Supply in Shaping Affordability</strong> <span class="arrow">&#9662;</span>
+        </li>
+        <div id="paper3" class="paper-details">
+            <p>Co-authors: Felipe Sepulveda</p>
+            <p>Amid a growing housing affordability crisis, countries are exploring housing assistance programs to curb rising costs and improve access. A critical factor in assessing these programs is housing supply elasticity, which reflects market responsiveness to demand changes. Leveraging quasi-experimental variation from Chile’s 2011 homeownership subsidy program and detailed administrative data on property transactions from 1998 to 2020, we estimate Santiago’s housing supply elasticity and the effects of the policy on property prices. On average, the results suggest an elasticity of 0.543. We also find that the response of new constructions is twice as large as the conversion of rental units to owner-occupied housing, limiting opportunities for households seeking to transition to homeownership. Finally, we estimate an average effect of 8.87% on housing prices due to the policy, with significant variation across neighborhoods. We conclude that subsidizing housing for low- and middle-income households may not effectively solve the affordability crisis and may disproportionately benefit developers.</p>
+            <a href="housing_supply_draft.pdf" target="_blank">Download Draft</a>
+        <div style="margin-top: 40px;"></div>
+        </div>
+        <li class="paper-title" onclick="togglePaperDetails('paper4')">
+            <strong>Performance Pay and Competition at School: Evidence from Chile</strong> <span class="arrow">&#9662;</span>
+        </li>
+        <div id="paper4" class="paper-details">
+            <p>Co-authors: Felipe Sepulveda</p>
+            <p>We study the impact of a performance-pay policy implemented in 2012 in Chile targeted to vulnerable middle and high school students. In particular, we estimate the short-term effects of this policy on grades, attendance, test scores, and college enrollment and the long-term effects by looking labor market outcomes. To estimate the effects of the policy, we leverage the assignation process, which only allows students with a vulnerability score below 99 to receive the transfer. This creates arbitrary cutoffs that we use to estimate a sharp regression discontinuity by comparing students just above and below this threshold. We also use the fact that eligible students receive the reward only if they are in the top 15% or 30% of the class to run another version of the RD, using as running variable the grade percentile, comparing students that are just above the threshold, with the ones just below. This allows us to estimate the subsequent effect of this payment on the students' academic trajectories. Finally, we show the differential impact of the policy depending on the level of competition within their classrooms, given by the fraction of eligible students.</p>
+        </div>
+        <li class="paper-title" onclick="togglePaperDetails('paper5')">
+            <strong>Perceived Corruption and Tax Morale</strong> <span class="arrow">&#9662;</span>
+        </li>
+        <div id="paper5" class="paper-details">
+            <p>Co-authors: Michael Best, Ricardo Perez-Truglia and Gaston Pierri</p>
+            <p>Tax evasion is a significant challenge in Latin America and the Caribbean, with an average income tax gap of 44% across the region (ECLAC, 2020). Widespread perceptions of corruption and low government effectiveness undermine trust in public institutions, diminish incentives for tax compliance, and weaken the social contract. This study, in collaboration with the Chilean Tax Agency, aims to evaluate the impact of randomized informational messages on taxpayers’ beliefs and subsequent tax payment behavior. The experiment features four distinct messages addressing corruption, transparency, revenue service performance, and tax collection, enabling a robust assessment of their effects on compliance. By shedding light on the potential of targeted messaging to influence taxpayer behavior, this research aims to provide actionable insights for developing effective communication strategies to enhance tax compliance and rebuild trust in public institutions.</p>
+        </div>
+    </ul>
+
+   <!-- Space between Working in Progress and Policy Reports -->
+   <div style="margin-top: 40px;"></div>
+
+   <!-- Policy Reports -->
+   <h3 id="policy-reports">Policy Reports</h3>
+   <ul>
+       <li class="paper-title" onclick="togglePaperDetails('paper6')">
+            <strong>The Impact of Bonus Depreciation </strong> <span class="arrow">&#9662;</span>       </li>
+       <div id="paper6" class="paper-details">
+           <p>Co-authors: Jorge Fantuzzi, Aberto Sasmay and Felipe Sepulveda</p>
+           <p>In this report, we evaluate the impact of instant and ultra-accelerated depreciation policies introduced in Chile’s 2014 Tax Reform. Aimed at encouraging investment among micro, small, and medium-sized enterprises, we find very low adoption rates of less than 0.1% for micro and small enterprises and less than 3% for medium-sized firms. Our analysis reveals no significant effects on investment, likely due to low take-up. To improve effectiveness, we recommend that the government increase awareness about the benefits through targeted information campaigns.</p>
+           <a href="policy_report_depreciation.pdf" target="_blank"> Full Report <em>[In Spanish]</em></a>  <a href="Policy_brief_depreciation.pdf" target="_blank">Policy Brief</a>
+        <div style="margin-top: 40px;"></div>
+        </div>
+       
+       <li class="paper-title" onclick="togglePaperDetails('paper7')">
+            <strong>The Effects of a Homebuyer Subsidy on Children's Education </strong> <span class="arrow">&#9662;</span>       </li>
+       <div id="paper7" class="paper-details">
+           <p>Co-authors: Felipe Vial and Harrison Wheeler</p>
+           <p>In this report, we evaluate the impact of a homebuyer subsidy introduced in 2011 in Chile on children’s education outcomes and long-term economic prospects. Our findings indicate that children from subsidy-winning families show significant improvements in school performance, high school completion, and college attendance, with additional positive effects on early employment rates. These gains highlight the role of housing stability in fostering educational success and economic mobility. </p>
+           <a href="Policy_brief_housing.pdf" target="_blank">Policy Brief</a>
+       </div>
+   </ul>
+  
+</section>
+
+<!-- Teaching Section -->
+<section id="teaching">
+    <h2>Teaching</h2>
+
+    <!-- UC Berkeley Section -->
+    <h3 class="section-title" onclick="toggleSection('ucberkeley')">UC Berkeley <span class="arrow">&#9662;</span></h3>
+    <div id="ucberkeley" class="section-details" style="padding-left: 30px;">
+        <h4 class="subsection-title" id="ucberkeley-undergrad" style="display:none; pointer-events: none; cursor: default; color: inherit;">Undergraduate</h4>
+        <div id="ucberkeley-class" class="section-details" style="padding-left: 20px; display:none;">
+            <p style="font-size: 1em;">Topics in Economic Research (Fall 2020, Fall 2021 and Spring 2022)</p>
+        </div>
+    </div>
+
+    <!-- PUC Chile Section -->
+    <h3 class="section-title" onclick="toggleSection('pucchile')">PUC Chile <span class="arrow">&#9662;</span></h3>
+    <div id="pucchile" class="section-details" style="padding-left: 30px;">
+
+        <!-- Part-Time Instructor Subsection -->
+        <h4 class="subsection-title" onclick="toggleSection('parttime')">Lecturer <span class="arrow">&#9662;</span></h4>
+        <div id="parttime" class="section-details" style="padding-left: 20px;">
+            <p style="font-size: 1em;">Principles of Economics (Fall 2018 and Spring 2019)</p>
+        </div>
+
+        <!-- Graduate Subsection -->
+        <h4 class="subsection-title" onclick="toggleSection('graduate')">Graduate <span class="arrow">&#9662;</span></h4>
+        <div id="graduate" class="section-details" style="padding-left: 20px;">
+            <p style="font-size: 1em;">Mechanism Design</p>
+            <p style="font-size: 1em;">Economics of Institutions</p>
+            <p style="font-size: 1em;">Game Theory</p>
+        </div>
+
+        <!-- Undergraduate Subsection -->
+        <h4 class="subsection-title" onclick="toggleSection('undergraduatepuc')">Undergraduate <span class="arrow">&#9662;</span></h4>
+        <div id="undergraduatepuc" class="section-details" style="padding-left: 20px;">
+            <p style="font-size: 1em;">Introduction to Economics</p>
+            <p style="font-size: 1em;">Microeconomics I</p>
+            <p style="font-size: 1em;">Microeconomics II</p>
+            <p style="font-size: 1em;">Industrial Organization</p>
+            <p style="font-size: 1em;">Game Theory</p>
+            <p style="font-size: 1em;">International Macroeconomics</p>
+            <p style="font-size: 1em;">Economical Analysis of the Chilean Experience</p>
+            <p style="font-size: 1em;">Optimization Methods</p>
+            <p style="font-size: 1em;">Accounting I</p>
+            <p style="font-size: 1em;">Microsoft Excel</p>
+        </div>
+    </div>
+</section>
+
+    <!-- CV Section -->
+    <section id="cv">
+        <h2>CV</h2>
+        <p><a href="curriculum_JF.pdf" target="_blank">Download my CV</a></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:jfuenzalida@berkeley.edu">jfuenzalida@berkeley.edu</a></p>
+        <p>Office 524, Evans Hall, UC Berkeley</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Joaquín Fuenzalida</p>
+    </footer>
+
+
+    <script>
+        function togglePaperDetails(paperId) {
+            var selectedPaper = document.getElementById(paperId);
+            var selectedTitle = document.querySelector(`[onclick="togglePaperDetails('${paperId}')"]`);
+    
+            // If it's open, close it and reset the title color
+            if (selectedPaper.style.display === "block") {
+                selectedPaper.style.display = "none";
+                selectedTitle.classList.remove('active');
+            } else {
+                document.querySelectorAll('.paper-details').forEach(function(paper) {
+                    paper.style.display = 'none';
+                });
+                document.querySelectorAll('.paper-title').forEach(function(title) {
+                    title.classList.remove('active');
+                });
+    
+                selectedPaper.style.display = "block";
+                selectedTitle.classList.add('active');
+            }
+        }
+    
+        function toggleSection(sectionId) {
+            var selectedSection = document.getElementById(sectionId);
+            var selectedTitle = document.querySelector(`[onclick="toggleSection('${sectionId}')"]`);
+    
+            // Special case for UC Berkeley to auto-open/close Undergraduate and the class
+            if (sectionId === 'ucberkeley') {
+                var undergraduateSection = document.getElementById('ucberkeley-undergrad');
+                var classSection = document.getElementById('ucberkeley-class');
+    
+                if (selectedSection.style.display === "block") {
+                    // Close UC Berkeley section and its contents
+                    selectedSection.style.display = "none";
+                    undergraduateSection.style.display = "none";
+                    classSection.style.display = "none";
+                    selectedTitle.classList.remove('active');
+                } else {
+                    // Close all sections first
+                    document.querySelectorAll('.section-details').forEach(function(section) {
+                        section.style.display = 'none';
+                    });
+                    document.querySelectorAll('.section-title').forEach(function(title) {
+                        title.classList.remove('active');
+                    });
+    
+                    // Open UC Berkeley and its contents
+                    selectedSection.style.display = "block";
+                    undergraduateSection.style.display = "block"; // Show Undergraduate subsection
+                    classSection.style.display = "block"; // Show class name
+                    selectedTitle.classList.add('active');
+                }
+            } else if (selectedSection.style.display === "block") {
+                selectedSection.style.display = "none";
+                selectedTitle.classList.remove('active');
+            } else {
+                // Handle closing/opening of PUC Chile subsections
+                if (['parttime', 'graduate', 'undergraduatepuc'].includes(sectionId)) {
+                    document.querySelectorAll('#pucchile .section-details').forEach(function(section) {
+                        section.style.display = 'none';
+                    });
+                    document.querySelectorAll('.subsection-title').forEach(function(title) {
+                        title.classList.remove('active');
+                    });
+                } else {
+                    document.querySelectorAll('.section-details').forEach(function(section) {
+                        section.style.display = 'none';
+                    });
+                    document.querySelectorAll('.section-title').forEach(function(title) {
+                        title.classList.remove('active');
+                    });
+                }
+    
+                selectedSection.style.display = "block";
+                selectedTitle.classList.add('active');
+            }
+        }
+    
+        window.onload = function() {
+            document.querySelectorAll('.section-details').forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.querySelectorAll('.paper-details').forEach(function(paper) {
+                paper.style.display = 'none';
+            });
+        };
+    </script>
+
+</body>
+</html>
