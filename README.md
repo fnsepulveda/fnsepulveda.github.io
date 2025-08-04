@@ -4,7 +4,7 @@ This is the repository for my personal academic webpage, hosted on GitHub Pages.
 
 ## About
 
-The website showcases my research, CV, and contact information. I am a PhD candidate in Economics at UBC.
+The website showcases my research, CV, and contact info. I am a PhD candidate in Economics at UBC.
 
 The website is live at: [https://fnsepulveda.github.io](https://fnsepulveda.github.io/)
 
