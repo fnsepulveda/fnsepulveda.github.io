@@ -1,0 +1,225 @@
+/* Navy and Gold Color Scheme */
+:root {
+    --navy: #003262; /* Berkeley Blue */
+    --gold: #FDB515; /* Berkeley Gold */
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--white);
+    color: var(--navy);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 50px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    flex-wrap: wrap; /* Enable wrapping on smaller screens */
+}
+
+.profile-picture {
+    text-align: center;
+    margin-right: 50px;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.profile-picture img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture h1 {
+    font-size: 1.8em;
+    color: var(--navy);
+    margin-top: 15px;
+}
+
+.description {
+    max-width: 600px;
+    flex-grow: 1; /* Allow the description to take up available space */
+}
+
+.description p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: var(--navy);
+}
+
+.description p:nth-of-type(2) {
+    margin-top: 0;
+}
+
+.description a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.description a:hover {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: var(--navy);
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5em;
+}
+
+nav ul li a:hover {
+    color: var(--gold);
+}
+
+/* Paper Title Styling */
+.paper-title {
+    margin-bottom: 20px;
+    font-size: 1.2em; /* Adjusted for paper titles */
+    cursor: pointer;
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+}
+
+.paper-title:hover {
+    color: var(--gold);
+}
+
+.arrow {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: var(--navy);
+}
+
+.paper-title.active {
+    color: var(--gold); /* Gold color when abstract is displayed */
+}
+
+/* Section and Footer Styling */
+section {
+    margin: 50px 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--navy);
+}
+
+/* More separation between Working Papers and Selected Work in Progress */
+#research h3 {
+    margin-top: 40px;
+}
+
+/* Adjust for condensed width but aligned to the left */
+.paper-details {
+    display: none;
+    overflow: visible; /* Ensure the abstract displays fully */
+    max-height: none;  /* Allow the container to expand fully */
+    max-width: 800px;  /* Keep the width more condensed */
+    margin-left: 30px; /* Move slightly to the right from the title */
+    text-align: justify; /* Balance the text alignment */
+}
+
+/* Section titles active styling */
+h3.active, h4.active {
+    color: var(--gold); /* Gold color when a paper or section is open */
+}
+
+.section-title {
+    cursor: pointer;
+    color: var(--navy);
+    font-size: 1.2em; /* Ensure section titles match paper titles */
+}
+
+.section-title:hover {
+    color: var(--gold);
+}
+
+.subsection-title {
+    cursor: pointer;
+    color: var(--navy);
+    font-size: 1.2em; /* Ensure subsection titles match paper titles */
+}
+
+.subsection-title:hover {
+    color: var(--gold);
+}
+
+.section-details {
+    display: none; /* Sections hidden initially */
+}
+
+/* Class Names Styling */
+.section-details p {
+    font-size: 1em; /* Slightly smaller font for class names */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack picture and description vertically */
+        text-align: center; /* Center text and image on smaller screens */
+    }
+
+    .profile-picture {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 20px; /* Add space between image and description */
+    }
+
+    .profile-picture img {
+        width: 150px; /* Reduce image size on smaller screens */
+    }
+
+    .description {
+        max-width: 100%; /* Allow full width for description */
+    }
+
+    .description p {
+        font-size: 1em; /* Slightly reduce font size for better readability */
+    }
+
+    .section-title, .subsection-title {
+        font-size: 1.1em; /* Slightly smaller font on mobile */
+    }
+}
+
+/* Footer */
+#contact {
+    margin-bottom: 200px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--navy);
+    color: var(--gold);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
