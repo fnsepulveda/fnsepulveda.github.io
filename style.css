@@ -29,14 +29,15 @@ body {
 }
 
 .sidebar img {
-    width: 200px;           /* fixed smaller size */
-    height: 200px;          /* keep square */
-    object-fit: cover;      /* crop to fit square */
-    border-radius: 8px;
+    width: 250px;           /* bigger size */
+    height: 250px;          /* keep square dimensions */
+    object-fit: cover;      /* crop nicely */
+    border-radius: 50%;     /* perfect circle */
     margin-bottom: 15px;
-    display: block;         /* center helper */
+    display: block;         /* allow centering */
     margin-left: auto;
-    margin-right: auto;     /* center in sidebar */
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional subtle shadow */
 }
 
 .content {
