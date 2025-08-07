@@ -1,22 +1,21 @@
-/* Navy and Gold Color Scheme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 :root {
-    --navy: #003262; /* Berkeley Blue */
-    --gold: #FDB515; /* Berkeley Gold */
-    --white: #ffffff;
+    --ubc-blue: #002145;
+    --accent-color: #5c9ead;
+    --bg-light: #fdfaf6;
+    --text-color: #002145;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--white);
-    color: var(--navy);
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
 
-header {
-    margin: 50px 0;
-}
-
+/* Header Container */
 .header-container {
     display: flex;
     align-items: center;
@@ -24,13 +23,14 @@ header {
     margin: 0 auto;
     width: 80%;
     max-width: 1200px;
-    flex-wrap: wrap; /* Enable wrapping on smaller screens */
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .profile-picture {
     text-align: center;
     margin-right: 50px;
-    flex-shrink: 0; /* Prevent image from shrinking */
+    flex-shrink: 0;
 }
 
 .profile-picture img {
@@ -42,170 +42,141 @@ header {
 
 .profile-picture h1 {
     font-size: 1.8em;
-    color: var(--navy);
+    color: var(--ubc-blue);
     margin-top: 15px;
 }
 
+/* Description block */
 .description {
     max-width: 600px;
-    flex-grow: 1; /* Allow the description to take up available space */
+    flex-grow: 1;
 }
 
 .description p {
     font-size: 1.2em;
     line-height: 1.6em;
-    color: var(--navy);
-}
-
-.description p:nth-of-type(2) {
-    margin-top: 0;
 }
 
 .description a {
-    color: var(--gold);
+    color: var(--accent-color);
     text-decoration: none;
 }
 
 .description a:hover {
-    color: var(--gold);
     text-decoration: underline;
 }
 
-/* Navigation Menu */
+/* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    background-color: var(--navy);
+    background-color: var(--ubc-blue);
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: var(--white);
-    font-size: 1.5em;
+    color: white;
+    font-size: 1.2em;
 }
 
 nav ul li a:hover {
-    color: var(--gold);
+    color: var(--accent-color);
 }
 
-/* Paper Title Styling */
+/* Paper Titles */
 .paper-title {
     margin-bottom: 20px;
-    font-size: 1.2em; /* Adjusted for paper titles */
+    font-size: 1.2em;
     cursor: pointer;
-    color: var(--navy);
+    color: var(--text-color);
     display: flex;
     align-items: center;
 }
 
-.paper-title:hover {
-    color: var(--gold);
+.paper-title:hover,
+.paper-title.active {
+    color: var(--accent-color);
 }
 
 .arrow {
     margin-left: 10px;
     font-size: 0.9em;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
-.paper-title.active {
-    color: var(--gold); /* Gold color when abstract is displayed */
-}
-
-/* Section and Footer Styling */
+/* Sections */
 section {
     margin: 50px 20px;
 }
 
 section h2 {
     font-size: 2em;
-    border-bottom: 2px solid var(--gold);
+    border-bottom: 2px solid var(--accent-color);
     padding-bottom: 10px;
     margin-bottom: 20px;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
-/* More separation between Working Papers and Selected Work in Progress */
 #research h3 {
     margin-top: 40px;
 }
 
-/* Adjust for condensed width but aligned to the left */
+/* Abstracts and details */
 .paper-details {
     display: none;
-    overflow: visible; /* Ensure the abstract displays fully */
-    max-height: none;  /* Allow the container to expand fully */
-    max-width: 800px;  /* Keep the width more condensed */
-    margin-left: 30px; /* Move slightly to the right from the title */
-    text-align: justify; /* Balance the text alignment */
+    max-width: 800px;
+    margin-left: 30px;
+    text-align: justify;
 }
 
-/* Section titles active styling */
-h3.active, h4.active {
-    color: var(--gold); /* Gold color when a paper or section is open */
+/* Expandable sections */
+h3.active,
+h4.active,
+.section-title:hover,
+.subsection-title:hover {
+    color: var(--accent-color);
 }
 
-.section-title {
-    cursor: pointer;
-    color: var(--navy);
-    font-size: 1.2em; /* Ensure section titles match paper titles */
-}
-
-.section-title:hover {
-    color: var(--gold);
-}
-
+.section-title,
 .subsection-title {
     cursor: pointer;
-    color: var(--navy);
-    font-size: 1.2em; /* Ensure subsection titles match paper titles */
+    font-size: 1.2em;
+    color: var(--text-color);
 }
 
-.subsection-title:hover {
-    color: var(--gold);
-}
-
-.section-details {
-    display: none; /* Sections hidden initially */
-}
-
-/* Class Names Styling */
 .section-details p {
-    font-size: 1em; /* Slightly smaller font for class names */
+    font-size: 1em;
 }
 
-/* Mobile adjustments */
+/* Mobile */
 @media (max-width: 768px) {
     .header-container {
-        flex-direction: column; /* Stack picture and description vertically */
-        text-align: center; /* Center text and image on smaller screens */
+        flex-direction: column;
+        text-align: center;
     }
 
     .profile-picture {
-        margin-right: 0; /* Remove right margin on smaller screens */
-        margin-bottom: 20px; /* Add space between image and description */
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .profile-picture img {
-        width: 150px; /* Reduce image size on smaller screens */
-    }
-
-    .description {
-        max-width: 100%; /* Allow full width for description */
+        width: 150px;
     }
 
     .description p {
-        font-size: 1em; /* Slightly reduce font size for better readability */
+        font-size: 1em;
     }
 
     .section-title, .subsection-title {
-        font-size: 1.1em; /* Slightly smaller font on mobile */
+        font-size: 1.1em;
     }
 }
 
@@ -217,8 +188,8 @@ h3.active, h4.active {
 footer {
     text-align: center;
     padding: 1em;
-    background-color: var(--navy);
-    color: var(--gold);
+    background-color: var(--ubc-blue);
+    color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
