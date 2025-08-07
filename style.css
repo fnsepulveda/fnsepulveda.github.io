@@ -29,13 +29,14 @@ body {
 }
 
 .sidebar img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    /* To make the image a SQUARE instead of auto height:
-       set height: same as width (e.g., 250px) in a media-safe rule or here */
-    border-radius: 8px;        /* soft square corners */
+    width: 200px;           /* fixed smaller size */
+    height: 200px;          /* keep square */
+    object-fit: cover;      /* crop to fit square */
+    border-radius: 8px;
     margin-bottom: 15px;
+    display: block;         /* center helper */
+    margin-left: auto;
+    margin-right: auto;     /* center in sidebar */
 }
 
 .content {
