@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
+/* -------------------- Theme -------------------- */
 :root {
     --ubc-blue: #002145;
-   --accent-color: #7ba3cc;
-    --bg-light: #fefefe;
+    --accent-color: #7ba3cc;   /* soft blue accent, no yellow */
+    --bg-light: #fefefe;       /* cream/white background */
     --text-color: #002145;
 }
 
@@ -15,16 +16,58 @@ body {
     padding: 0;
 }
 
-/* Header Container */
+/* -------------------- Two-column layout -------------------- */
+.main-container {
+    display: flex;
+    min-height: 100vh; /* full viewport height */
+}
+
+.sidebar {
+    flex: 0 0 300px;          /* fixed column width */
+    background-color: var(--bg-light);
+    padding: 20px;
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* To make the image a SQUARE instead of auto height:
+       set height: same as width (e.g., 250px) in a media-safe rule or here */
+    border-radius: 8px;        /* soft square corners */
+    margin-bottom: 15px;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+/* Helpful sidebar link sizing */
+.contact-info p,
+.sidebar a {
+    font-size: 0.95em;
+    margin: 6px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: var(--ubc-blue);
+}
+
+.contact-info a:hover {
+    color: var(--accent-color);
+}
+
+/* -------------------- Header (legacy block, still supported) -------------------- */
 .header-container {
     display: flex;
     align-items: center;
     justify-content: left;
-    margin: 0 auto;
+    margin: 50px auto 0 auto;
     width: 80%;
     max-width: 1200px;
     flex-wrap: wrap;
-    margin-top: 50px;
 }
 
 .profile-picture {
@@ -33,10 +76,14 @@ body {
     flex-shrink: 0;
 }
 
+/* If you want the profile picture to be a SQUARE:
+   change height to match width AND keep object-fit: cover.
+   Remove/adjust border-radius (0 for sharp, 8px for soft). */
 .profile-picture img {
     width: 250px;
-    height: auto;
-    border-radius: 50%;
+    height: 250px;        /* square */
+    object-fit: cover;
+    border-radius: 8px;   /* set to 50% for circle */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -66,7 +113,7 @@ body {
     text-decoration: underline;
 }
 
-/* Navigation */
+/* -------------------- Navigation -------------------- */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -90,7 +137,7 @@ nav ul li a:hover {
     color: var(--accent-color);
 }
 
-/* Paper Titles */
+/* -------------------- Research / Papers -------------------- */
 .paper-title {
     margin-bottom: 20px;
     font-size: 1.2em;
@@ -155,8 +202,43 @@ h4.active,
     font-size: 1em;
 }
 
-/* Mobile */
+/* -------------------- Footer -------------------- */
+#contact {
+    margin-bottom: 200px; /* breathing room above fixed footer */
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--ubc-blue);
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* -------------------- Responsive -------------------- */
+@media (max-width: 900px) {
+    .content {
+        padding: 28px;
+    }
+}
+
 @media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* stack sidebar over content */
+    }
+
+    .sidebar {
+        flex: none;
+        width: 100%;
+        padding: 20px 20px 0;
+    }
+
+    .content {
+        padding: 24px;
+    }
+
     .header-container {
         flex-direction: column;
         text-align: center;
@@ -169,28 +251,15 @@ h4.active,
 
     .profile-picture img {
         width: 150px;
+        height: 150px;  /* keep square on mobile */
     }
 
     .description p {
         font-size: 1em;
     }
 
-    .section-title, .subsection-title {
+    .section-title,
+    .subsection-title {
         font-size: 1.1em;
     }
-}
-
-/* Footer */
-#contact {
-    margin-bottom: 200px;
-}
-
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: var(--ubc-blue);
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
