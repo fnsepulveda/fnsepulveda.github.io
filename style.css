@@ -28,17 +28,6 @@ body {
     padding: 20px;
 }
 
-.sidebar img {
-    width: 250px;           /* bigger size */
-    height: 250px;          /* keep square dimensions */
-    object-fit: cover;      /* crop nicely */
-    border-radius: 50%;     /* perfect circle */
-    margin-bottom: 15px;
-    display: block;         /* allow centering */
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional subtle shadow */
-}
 
 .content {
     flex: 1;
@@ -85,7 +74,7 @@ body {
     width: 250px;
     height: 250px;        /* square */
     object-fit: cover;
-    border-radius: 8px;   /* set to 50% for circle */
+    border-radius: 50%;   /* set to 50% for circle */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
