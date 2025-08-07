@@ -6,6 +6,79 @@
     <title>Felipe Sepulveda</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --ubc-blue: #002145;
+            --accent-color: #7ba3cc; /* soft blue alternative to yellow */
+            --bg-light: #f4f4f4;
+            --text-color: #002145;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            color: var(--text-color);
+        }
+
+        .main-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            flex: 0 0 300px;
+            background-color: var(--bg-light);
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .contact-info p, .sidebar a {
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: var(--ubc-blue);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--ubc-blue);
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--bg-light);
+        }
+    </style>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HBXYMSEGRE"></script>
@@ -13,51 +86,39 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-HBXYMSEGRE');
     </script>
     <!-- End Google Analytics -->
 </head>
 <body>
-
-    <!-- Header with Profile Picture on the Left, Name below, and Description on the Right -->
-    <header>
-        <div class="header-container">
-            <!-- Picture on the Left -->
-            <div class="profile-picture">
-                <img src="picture1.jpg" alt="Felipe Sepulveda">
-                <h1>Felipe Sepulveda</h1>
+    <div class="main-container">
+        <!-- Sidebar with Name, Picture, Contact Info -->
+        <aside class="sidebar">
+            <h1>Felipe Sepulveda</h1>
+            <p>PhD Candidate, UBC</p>
+            <img src="picture1.jpg" alt="Felipe Sepulveda">
+            <div class="contact-info">
+                <p><a href="mailto:fnsepulveda@uc.cl">fnsepulveda@uc.cl</a></p>
+                <p><a href="curriculum_JF.pdf" target="_blank">Download CV</a></p>
+                <p><a href="https://www.linkedin.com/in/joaquin-fuenzalida-2aa002136/" target="_blank">LinkedIn</a></p>
+                <p><a href="https://x.com/JiFuenzalida" target="_blank">Twitter</a></p>
+                <p><a href="https://scholar.google.com/citations?user=SpMJi10AAAAJ" target="_blank">Google Scholar</a></p>
             </div>
+        </aside>
 
-            <!-- Description on the Right -->
-            <div class="description">
-                <p>
-                    I am a PhD candidate at UBC.
-                </p>
-                <p style="margin-top: 10px;">
-                    Email: <a href="mailto:fnsepulveda@uc.cl">fnsepulveda@uc.cl</a> | asdasd
-                </p>
-                <!-- LinkedIn and Twitter links -->
-                <p>
-                    <a href="https://www.linkedin.com/in/joaquin-fuenzalida-2aa002136/" target="_blank">LinkedIn</a> |
-                    <a href="https://x.com/JiFuenzalida" target="_blank">Twitter</a>
-                </p>
-            </div>
-        </div>
-    </header>
+        <!-- Main Content Area -->
+        <main class="content">
+            <nav>
+                <ul>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#teaching">Teaching</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
 
-    <!-- Navigation (For easy scroll navigation) -->
-    <nav>
-        <ul>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-
-   <!-- Research Section -->
+            <!-- Research Section -->
+              <!-- Research Section -->
 <section id="research">
     <h2>Research</h2>
 
@@ -126,7 +187,7 @@
 </section>
     
 
-<!-- Teaching Section -->
+            <!-- Teaching Section -->
 <section id="teaching">
     <h2>Teaching</h2>
 
@@ -174,30 +235,30 @@
     </div>
 </section>
 
-    <!-- CV Section -->
-    <section id="cv">
-        <h2>CV</h2>
-        <p><a href="curriculum_JF.pdf" target="_blank">Download my CV</a></p>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:fnsepulveda@uc.cl">fnsepulveda@uc.cl</a></p>
-        <p>asdasd UBC</p>
-    </section>
+            <!-- CV Section -->
+            <section id="cv">
+                <h2>CV</h2>
+                <p><a href="curriculum_FS.pdf" target="_blank">Download my CV</a></p>
+            </section>
 
-    <footer>
-        <p>&copy; 2025 Felipe Sepulveda</p>
-    </footer>
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:fnsepulveda@uc.cl">fnsepulveda@uc.cl</a></p>
+                <p>UBC</p>
+            </section>
 
+            <footer>
+                <p>&copy; 2025 Felipe Sepulveda</p>
+            </footer>
+        </main>
+    </div>
 
     <script>
         function togglePaperDetails(paperId) {
             var selectedPaper = document.getElementById(paperId);
             var selectedTitle = document.querySelector(`[onclick="togglePaperDetails('${paperId}')"]`);
-    
-            // If it's open, close it and reset the title color
             if (selectedPaper.style.display === "block") {
                 selectedPaper.style.display = "none";
                 selectedTitle.classList.remove('active');
@@ -208,47 +269,38 @@
                 document.querySelectorAll('.paper-title').forEach(function(title) {
                     title.classList.remove('active');
                 });
-    
                 selectedPaper.style.display = "block";
                 selectedTitle.classList.add('active');
             }
         }
-    
+
         function toggleSection(sectionId) {
             var selectedSection = document.getElementById(sectionId);
             var selectedTitle = document.querySelector(`[onclick="toggleSection('${sectionId}')"]`);
-    
-            // Special case for UC Berkeley to auto-open/close Undergraduate and the class
             if (sectionId === 'ucberkeley') {
                 var undergraduateSection = document.getElementById('ucberkeley-undergrad');
                 var classSection = document.getElementById('ucberkeley-class');
-    
                 if (selectedSection.style.display === "block") {
-                    // Close UC Berkeley section and its contents
                     selectedSection.style.display = "none";
                     undergraduateSection.style.display = "none";
                     classSection.style.display = "none";
                     selectedTitle.classList.remove('active');
                 } else {
-                    // Close all sections first
                     document.querySelectorAll('.section-details').forEach(function(section) {
                         section.style.display = 'none';
                     });
                     document.querySelectorAll('.section-title').forEach(function(title) {
                         title.classList.remove('active');
                     });
-    
-                    // Open UC Berkeley and its contents
                     selectedSection.style.display = "block";
-                    undergraduateSection.style.display = "block"; // Show Undergraduate subsection
-                    classSection.style.display = "block"; // Show class name
+                    undergraduateSection.style.display = "block";
+                    classSection.style.display = "block";
                     selectedTitle.classList.add('active');
                 }
             } else if (selectedSection.style.display === "block") {
                 selectedSection.style.display = "none";
                 selectedTitle.classList.remove('active');
             } else {
-                // Handle closing/opening of PUC Chile subsections
                 if (['parttime', 'graduate', 'undergraduatepuc'].includes(sectionId)) {
                     document.querySelectorAll('#pucchile .section-details').forEach(function(section) {
                         section.style.display = 'none';
@@ -264,12 +316,11 @@
                         title.classList.remove('active');
                     });
                 }
-    
                 selectedSection.style.display = "block";
                 selectedTitle.classList.add('active');
             }
         }
-    
+
         window.onload = function() {
             document.querySelectorAll('.section-details').forEach(function(section) {
                 section.style.display = 'none';
@@ -279,6 +330,9 @@
             });
         };
     </script>
-
 </body>
 </html>
+
+
+
+
