@@ -28,6 +28,14 @@ body {
     padding: 20px;
 }
 
+.sidebar img {
+    width: 250px;          /* fixed size */
+    height: 250px;         /* same for circle */
+    object-fit: cover;
+    border-radius: 50%;    /* make it a circle */
+    display: block;
+    margin: 0 auto 15px auto;
+}
 
 .content {
     flex: 1;
