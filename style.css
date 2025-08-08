@@ -218,12 +218,13 @@ h4.active,
 
 footer {
     text-align: center;
-    padding: 1em;
+    padding: 0.6em;                /* less tall */
     background-color: var(--ubc-blue);
     color: white;
     font-size: 0.8em;
-    max-width: 900px; /* or match your .content max width */
-    margin: 0 auto; /* center it */
+    width: 100%;                   /* span entire page */
+    margin-top: 40px;               /* space before footer */
+    box-sizing: border-box;
 }
 
 /* -------------------- Responsive -------------------- */
