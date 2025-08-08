@@ -26,37 +26,39 @@ body {
 }
 
 .sidebar {
-    flex: 0 0 280px;          
+    flex: 0 0 300px;          
     background-color: var(--bg-light);
-    padding: 20px;
-    text-align: center; /* centers everything inside */
+    padding: 20px 30px;  /* overall padding for breathing room */
 }
 
 .sidebar img {
-    width: 200px;          
-    height: 200px;         
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 50%;    
+    border-radius: 50%;
     display: block;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 20px auto; /* center the image only */
 }
 
-.sidebar h1 {
-    font-size: 1.6em;
-    margin: 10px 0 5px 0; /* tighter space between name and picture */
+.sidebar h1,
+.contact-info {
+    text-align: left;       /* left align text */
+    margin-left: 15px;      /* push text to the right slightly */
 }
 
 .sidebar p {
-    margin: 4px 0;
+    margin-left: 15px;      /* same offset for other text */
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.contact-info {
-    margin-top: 15px; /* space between general info and contact links */
+.contact-info a {
+    text-decoration: none;
+    color: var(--ubc-blue);
 }
 
-.contact-info p {
-    margin: 5px 0;
-    font-size: 0.95em;
+.contact-info a:hover {
+    color: var(--accent-color);
 }
 
 /* -------------------- Header (legacy block, still supported) -------------------- */
