@@ -136,7 +136,7 @@ nav ul li a:hover {
     gap: .5rem; 
     align-items: baseline; 
     padding: 4px 0; /* light breathing space */
-    border-bottom: 1px solid #ddd; /* subtle separator instead of box */
+    border-bottom: none; /* subtle separator instead of box */
 }
 
 .paper summary::-webkit-details-marker { 
