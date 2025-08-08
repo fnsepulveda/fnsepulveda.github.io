@@ -126,9 +126,6 @@ nav ul li a:hover {
 }
 
 /* -------------------- Research / Papers -------------------- */
-.paper {
-    margin-bottom: 20px; /* space after each paper */
-}
 
 .paper details { 
     padding: 0; /* no inner box padding */
