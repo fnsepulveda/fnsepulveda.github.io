@@ -147,25 +147,19 @@ nav ul li a:hover {
 }
 
 /* -------------------- Research / Papers -------------------- */
-.paper-title {
-    margin-bottom: 20px;
-    font-size: 1em;
-    cursor: pointer;
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
-}
-
-.paper-title:hover,
-.paper-title.active {
-    color: var(--accent-color);
-}
-
-.arrow {
-    margin-left: 10px;
-    font-size: 0.9em;
-    color: var(--text-color);
-}
+.papers { list-style: none; margin: 0; padding: 0; }
+.paper { border: 1px solid #e5e5e5; border-radius: 8px; margin: 10px 0; }
+.paper details { padding: 10px 12px; }
+.paper summary { cursor: pointer; display: flex; flex-wrap: wrap; gap: .5rem; align-items: baseline; }
+.paper summary::-webkit-details-marker { display: none; } /* hide default arrow */
+.paper .title { font-weight: 600; }
+.paper .meta { color: #555; }
+.paper .right { margin-left: auto; display: inline-flex; gap: .35rem; align-items: center; }
+.badge { font-size: .85rem; border: 1px solid #ccc; border-radius: 6px; padding: 0 .4rem; text-decoration: none; color: inherit; }
+.toggle .hide { display: none; }
+details[open] .toggle .show { display: none; }
+details[open] .toggle .hide { display: inline; }
+.abstract { margin-top: .6rem; color: #333; }
 
 /* Sections */
 section {
