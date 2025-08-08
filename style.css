@@ -214,9 +214,10 @@ footer {
     padding: 1em;
     background-color: var(--ubc-blue);
     color: white;
-    position: static;
+    position: fixed;
     width: 100%;
-    bottom: auto;
+    bottom: 0;
+    font-size: 0.8em; /* smaller text */
 }
 
 /* -------------------- Responsive -------------------- */
