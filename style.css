@@ -137,6 +137,7 @@ nav ul li a:hover {
     gap: .5rem; 
     align-items: baseline; 
     padding: 4px 0; /* light breathing space */
+    margin-bottom: 20px;
     border-bottom: none; /* subtle separator instead of box */
 }
 
