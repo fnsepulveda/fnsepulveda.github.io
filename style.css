@@ -19,6 +19,7 @@ body {
 /* -------------------- Two-column layout -------------------- */
 .main-container {
     display: flex;
+    align-items: flex-start; /* top-align both columns */
     min-height: 100vh;
     padding-left: 40px;  /* space on the left */
     padding-right: 40px; /* space on the right */
