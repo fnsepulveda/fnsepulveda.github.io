@@ -221,10 +221,9 @@ footer {
     padding: 1em;
     background-color: var(--ubc-blue);
     color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 0.8em; /* smaller text */
+    font-size: 0.8em;
+    max-width: 900px; /* or match your .content max width */
+    margin: 0 auto; /* center it */
 }
 
 /* -------------------- Responsive -------------------- */
