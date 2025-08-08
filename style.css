@@ -144,6 +144,10 @@ nav ul li a:hover {
     display: none; 
 }
 
+summary::marker {
+    content: none;
+}
+
 .paper .title { 
     font-weight: 600; 
     display: block; /* forces it onto its own line */
