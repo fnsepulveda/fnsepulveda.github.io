@@ -255,7 +255,8 @@ footer {
 
 @media (max-width: 768px) {
     .main-container {
-        flex-direction: column; /* stack sidebar over content */
+        display: flex;
+        align-items: flex-start; /* top-align both columns */
     }
 
     .sidebar {
