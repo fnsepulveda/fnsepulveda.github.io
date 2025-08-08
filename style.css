@@ -272,6 +272,12 @@ footer {
         padding: 24px;
     }
 
+    .content p:first-of-type {
+    margin-top: 40px; /* adjust to your liking */
+    }
+
+    
+
     .header-container {
         flex-direction: column;
         text-align: center;
