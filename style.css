@@ -19,11 +19,14 @@ body {
 /* -------------------- Two-column layout -------------------- */
 .main-container {
     display: flex;
-    min-height: 100vh; /* full viewport height */
+    min-height: 100vh;
+    padding-left: 40px;  /* space on the left */
+    padding-right: 40px; /* space on the right */
+    box-sizing: border-box; /* ensures padding doesn’t break layout */
 }
 
 .sidebar {
-    flex: 0 0 300px;          /* fixed column width */
+    flex: 0 0 300px;          
     background-color: var(--bg-light);
     padding: 20px;
 }
