@@ -28,28 +28,35 @@ body {
 .sidebar {
     flex: 0 0 300px;          
     background-color: var(--bg-light);
-    padding: 20px 30px;  /* overall padding for breathing room */
+    padding: 25px; /* even padding all around */
 }
 
 .sidebar img {
-    width: 250px;
-    height: 250px;
+    width: 220px;  /* slightly smaller for balance */
+    height: 220px;
     object-fit: cover;
     border-radius: 50%;
     display: block;
-    margin: 0 auto 20px auto; /* center the image only */
+    margin: 0 auto 20px auto; /* center image horizontally */
 }
 
-.sidebar h1,
-.contact-info {
-    text-align: left;       /* left align text */
-    margin-left: 15px;      /* push text to the right slightly */
+.sidebar h1 {
+    font-size: 1.6em;
+    margin-bottom: 8px;
+    text-align: left; /* align text left */
 }
 
 .sidebar p {
-    margin-left: 15px;      /* same offset for other text */
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 4px 0;
+    font-size: 0.95em;
+}
+
+.contact-info {
+    margin-top: 15px; /* space above contact info */
+}
+
+.contact-info p {
+    margin: 6px 0;
 }
 
 .contact-info a {
