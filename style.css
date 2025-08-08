@@ -146,10 +146,12 @@ nav ul li a:hover {
 
 .paper .title { 
     font-weight: 600; 
+    display: block; /* forces it onto its own line */
 }
 
 .paper .meta { 
     color: #555; 
+    display: block; /* forces it onto its own line */
 }
 
 .paper .right { 
