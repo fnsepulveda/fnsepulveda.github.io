@@ -79,28 +79,6 @@ body {
     flex-wrap: wrap;
 }
 
-.profile-picture {
-    text-align: center;
-    margin-right: 50px;
-    flex-shrink: 0;
-}
-
-/* If you want the profile picture to be a SQUARE:
-   change height to match width AND keep object-fit: cover.
-   Remove/adjust border-radius (0 for sharp, 8px for soft). */
-.profile-picture img {
-    width: 250px;
-    height: 250px;        /* square */
-    object-fit: cover;
-    border-radius: 50%;   /* set to 50% for circle */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.profile-picture h1 {
-    font-size: 1.8em;
-    color: var(--ubc-blue);
-    margin-top: 15px;
-}
 
 /* Description block */
 .description {
