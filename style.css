@@ -26,39 +26,37 @@ body {
 }
 
 .sidebar {
-    flex: 0 0 300px;          
+    flex: 0 0 280px;          
     background-color: var(--bg-light);
     padding: 20px;
+    text-align: center; /* centers everything inside */
 }
 
 .sidebar img {
-    width: 250px;          /* fixed size */
-    height: 250px;         /* same for circle */
+    width: 200px;          
+    height: 200px;         
     object-fit: cover;
-    border-radius: 50%;    /* make it a circle */
+    border-radius: 50%;    
     display: block;
     margin: 0 auto 15px auto;
 }
 
-.content {
-    flex: 1;
-    padding: 40px;
+.sidebar h1 {
+    font-size: 1.6em;
+    margin: 10px 0 5px 0; /* tighter space between name and picture */
 }
 
-/* Helpful sidebar link sizing */
-.contact-info p,
-.sidebar a {
+.sidebar p {
+    margin: 4px 0;
+}
+
+.contact-info {
+    margin-top: 15px; /* space between general info and contact links */
+}
+
+.contact-info p {
+    margin: 5px 0;
     font-size: 0.95em;
-    margin: 6px 0;
-}
-
-.contact-info a {
-    text-decoration: none;
-    color: var(--ubc-blue);
-}
-
-.contact-info a:hover {
-    color: var(--accent-color);
 }
 
 /* -------------------- Header (legacy block, still supported) -------------------- */
