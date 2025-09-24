@@ -127,9 +127,6 @@ nav ul li a:hover {
 
 /* -------------------- Research / Papers -------------------- */
 
-
-
-
 .paper details { 
     padding: 0; /* no inner box padding */
 }
@@ -264,48 +261,56 @@ footer {
 }
 
 @media (max-width: 768px) {
+    /* Stack sidebar and content vertically on mobile */
     .main-container {
-        display: flex;
-        align-items: flex-start; /* top-align both columns */
+        display: block; /* Stack content vertically on mobile */
+        padding: 20px;
     }
 
+    /* Hide Sidebar on Mobile */
     .sidebar {
-        flex: none;
-        width: 100%;
-        padding: 20px 20px 0;
+        display: none;
     }
 
-    .content {
-        padding: 24px;
+    /* Mobile Menu (Positioned at the Top-Right) */
+    .mobile-menu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
     }
 
-    .content p:first-of-type {
-    margin-top: 40px; /* adjust to your liking */
+    .mobile-menu select {
+        width: 150px;
+        padding: 10px;
+        font-size: 1em;
+        background-color: var(--ubc-blue);
+        color: white;
+        border: none;
+        border-radius: 5px;
     }
 
-
-
-    .header-container {
-        flex-direction: column;
+    /* Stack Profile Section (Name, Degree, Picture, Description) */
+    .profile {
+        padding: 20px;
         text-align: center;
     }
 
-    .profile-picture {
-        margin-right: 0;
-        margin-bottom: 20px;
+    .profile h1 {
+        font-size: 1.6em;
     }
 
     .profile-picture img {
         width: 150px;
-        height: 150px;  /* keep square on mobile */
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 20px 0;
     }
 
     .description p {
         font-size: 1em;
+        line-height: 1.6em;
     }
 
-    .section-title,
-    .subsection-title {
-        font-size: 1em;
-    }
-}
+    /* Footer Social Links */
