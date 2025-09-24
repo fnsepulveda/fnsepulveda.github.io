@@ -24,30 +24,40 @@ body {
     box-sizing: border-box; /* ensures padding doesn’t break layout */
 }
 
+/* -------------------- Profile Container -------------------- */
 .profile-container {
-    flex: 0 0 300px;          
+    display: flex;                /* Use flexbox to position items horizontally */
+    align-items: center;          /* Vertically align content in the center */
+    flex-wrap: wrap;              /* Allow items to wrap if the screen is small */
     background-color: var(--bg-light);
-    padding: 25px; /* even padding all around */
-}
-
-.profile-container img {
-    width: 220px;  /* slightly smaller for balance */
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin: 40px 0 40px 0; /* top, right, bottom, left */
+    padding: 25px;
+    margin: 20px 0;
 }
 
 .profile-container h1 {
     font-size: 1.6em;
     margin-bottom: 8px;
-    text-align: left; /* align text left */
+    text-align: left;
 }
 
 .profile-container p {
     margin: 4px 0;
     font-size: 0.95em;
+}
+
+/* Profile Picture Settings */
+.profile-container img {
+    width: 220px;  /* Profile picture size */
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;  /* Circular image */
+    margin-right: 20px;  /* Space between image and description */
+}
+
+/* Description (on the right of the picture) */
+.profile-container .description {
+    flex-grow: 1;
+    max-width: 600px;   /* Limit width of the description */
 }
 
 .contact-info {
