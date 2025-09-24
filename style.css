@@ -253,13 +253,7 @@ footer {
     box-sizing: border-box;
 }
 
-/* -------------------- Responsive -------------------- */
-@media (max-width: 900px) {
-    .content {
-        padding: 28px;
-    }
-}
-
+/* -------------------- Mobile Version -------------------- */
 @media (max-width: 768px) {
     /* Stack sidebar and content vertically on mobile */
     .main-container {
@@ -300,12 +294,16 @@ footer {
         font-size: 1.6em;
     }
 
+    /* Profile Picture (Mobile) */
     .profile-picture img {
-        width: 150px;
-        height: 150px;
+        width: 150px;  /* Make sure the image is visible on mobile */
+        height: 150px; /* Maintain aspect ratio */
         border-radius: 50%;
-        object-fit: cover;
-        margin: 20px 0;
+        object-fit: cover; /* Ensures image covers the area without distortion */
+        margin: 20px 0; /* Add spacing around the image */
+        display: block;  /* Ensure the image is displayed as a block element */
+        margin-left: auto;
+        margin-right: auto;  /* Center the image horizontally */
     }
 
     .description p {
@@ -314,3 +312,34 @@ footer {
     }
 
     /* Footer Social Links */
+    .footer-icons {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .footer-icons a {
+        font-size: 1.2em;
+        color: var(--ubc-blue);
+        text-decoration: none;
+    }
+
+    .footer-icons a:hover {
+        color: var(--accent-color);
+    }
+
+    /* Hide Sections on Mobile (But Keep Visible on Desktop) */
+    #research, #teaching, #contact {
+        display: none; /* Hide by default on mobile */
+    }
+}
+
+/* -------------------- Desktop Version -------------------- */
+.profile-picture img {
+    width: 220px;  /* Larger size for desktop */
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 40px 0; /* Adjust spacing for desktop */
+}
