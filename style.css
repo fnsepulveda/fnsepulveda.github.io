@@ -34,9 +34,9 @@ body {
 
 /* -------------------- Profile Container -------------------- */
 .profile-container {
-    display: flex;                /* Use flexbox to position items horizontally */
-    align-items: flex-start;      /* Vertically align content to the top */
-    gap: 20px;                    /* Add space between the left and right side */
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; /* Reduced the gap between the left and right sections */
     padding: 25px;
     margin: 20px 0;
 }
@@ -73,9 +73,11 @@ body {
     max-width: 600px;               /* Limit the width of the description */
 }
 
+/* Profile Description (Right side) */
 .profile-right .description p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.6em;
+    color: var(--text-color);  /* Ensure the text color is consistent */
 }
 
 
