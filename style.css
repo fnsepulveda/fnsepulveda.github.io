@@ -253,24 +253,40 @@ footer {
     box-sizing: border-box;
 }
 
-/* -------------------- Mobile Header and Menu -------------------- */
+/* -------------------- Mobile Layout -------------------- */
 @media (max-width: 768px) {
-    /* Header Section: Name, Degree, and Menu */
-    .header-container {
-        flex-direction: column; /* Stack items vertically */
-        text-align: center; /* Center-align the content */
-        padding-top: 20px; /* Add space at the top */
+    /* 1. Sidebar (Name, Degree, Menu) */
+    .sidebar {
+        display: flex;
+        flex-direction: column; /* Stack sidebar elements vertically */
+        align-items: center; /* Center the content */
+        padding: 20px;
     }
 
-    .header-container .name-degree {
+    .sidebar h1 {
         font-size: 1.6em;
-        font-weight: 600;
+        text-align: center; /* Center the name */
     }
 
-    .header-container .menu {
+    .sidebar p {
+        font-size: 1em;
+        text-align: center; /* Center the degree and university */
+    }
+
+    .sidebar img {
+        width: 150px;
+        height: 150px; /* Keep image square */
+        border-radius: 50%; /* Make the image circular */
+        object-fit: cover;
+        margin: 20px 0;
+    }
+
+    /* 2. Add Mobile Navigation Menu */
+    .menu {
         margin-top: 10px;
         display: flex;
-        justify-content: flex-end; /* Align menu to the right */
+        justify-content: flex-end;
+        width: 100%;
     }
 
     .menu select {
@@ -280,45 +296,70 @@ footer {
         padding: 10px;
         border: none;
         border-radius: 5px;
+        width: 100%; /* Full width of the sidebar */
     }
 
-    /* Profile Picture and Description */
-    .profile-picture {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .profile-picture img {
-        width: 150px;
-        height: 150px; /* Keep square aspect ratio on mobile */
-        object-fit: cover;
-        border-radius: 50%;
-    }
-
-    .description {
-        text-align: center;
-        padding: 0 20px;
+    /* 3. Main Content (Description and Research Section) */
+    .content {
+        padding: 20px;
     }
 
     .description p {
         font-size: 1em;
-        line-height: 1.6;
+        text-align: center; /* Center-align text */
+        line-height: 1.6em;
     }
 
-    /* Footer: Social Icons */
-    .footer-icons {
+    /* 4. Footer (Social Icons) */
+    .contact-info {
         display: flex;
         justify-content: space-around;
+        width: 100%;
         margin-top: 20px;
     }
 
-    .footer-icons a {
-        font-size: 1.2em;
+    .contact-info p {
+        font-size: 1em;
+        text-align: center; /* Center the social links */
+    }
+
+    .contact-info a {
         color: var(--ubc-blue);
         text-decoration: none;
     }
 
-    .footer-icons a:hover {
+    .contact-info a:hover {
+        color: var(--accent-color);
+    }
+
+    /* 5. Research, Teaching, and Contact Sections */
+    section {
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.3em;
+        margin-top: 20px;
+    }
+
+    /* Collapsible section titles (Teaching/Research) */
+    .section-details {
+        display: none; /* Hide by default */
+        padding-left: 30px;
+    }
+
+    .section-title {
+        cursor: pointer;
+        font-size: 1.2em;
+        color: var(--ubc-blue);
+    }
+
+    .section-title:hover {
         color: var(--accent-color);
     }
 }
