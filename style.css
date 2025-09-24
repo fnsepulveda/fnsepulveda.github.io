@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'); 
+
 /* -------------------- Theme -------------------- */
 :root {
     --ubc-blue: #002145;
@@ -12,16 +14,6 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
-}
-
-/* -------------------- Two-column layout -------------------- */
-.main-container {
-    display: flex;
-    align-items: flex-start; /* top-align both columns */
-    min-height: 100vh;
-    padding-left: 40px;  /* space on the left */
-    padding-right: 40px; /* space on the right */
-    box-sizing: border-box; /* ensures padding doesn’t break layout */
 }
 
 /* -------------------- Profile Container -------------------- */
@@ -59,6 +51,7 @@ body {
     flex-grow: 1;
     max-width: 600px;   /* Limit width of the description */
 }
+
 
 .contact-info {
     margin-top: 15px; /* space above contact info */
