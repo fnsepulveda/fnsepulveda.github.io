@@ -16,31 +16,43 @@ body {
     padding: 0;
 }
 
-* -------------------- Profile Container -------------------- */
+/* -------------------- Theme -------------------- */
+:root {
+    --ubc-blue: #002145;
+    --accent-color: #7ba3cc;   /* soft blue accent, no yellow */
+    --bg-light: #fefefe;       /* cream/white background */
+    --text-color: #002145;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------- Profile Container -------------------- */
 .profile-container {
     display: flex;                /* Use flexbox to position items horizontally */
-    justify-content: space-between; /* Spread items apart */
-    align-items: flex-start;      /* Align items to the top of the container */
-    background-color: var(--bg-light);
+    align-items: flex-start;      /* Vertically align content to the top */
+    gap: 20px;                    /* Add space between the left and right side */
     padding: 25px;
     margin: 20px 0;
 }
 
-/* Left side (Name, University, Picture, Links) */
+/* Left part of profile (name, university, contact) */
 .profile-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 250px; /* Set a fixed width to prevent overflowing */
+    flex: 1;                       /* Left section takes available space */
 }
 
-.profile-container h1 {
+.profile-left h1 {
     font-size: 1.6em;
     margin-bottom: 8px;
     text-align: left;
 }
 
-.profile-container p {
+.profile-left p {
     margin: 4px 0;
     font-size: 0.95em;
 }
@@ -51,38 +63,19 @@ body {
     height: 220px;
     object-fit: cover;
     border-radius: 50%;  /* Circular image */
-    margin-bottom: 20px;  /* Space below the image */
+    display: block;
+    margin: 20px 0;
 }
 
-/* Links Settings */
-.profile-left .contact-info {
-    margin-top: 15px; /* space above contact info */
-}
-
-.profile-left .contact-info p {
-    margin: 6px 0;
-}
-
-.profile-left .contact-info a {
-    text-decoration: none;
-    color: var(--ubc-blue);
-}
-
-.profile-left .contact-info a:hover {
-    color: var(--accent-color);
-}
-
-/* Right side (Description) */
+/* Right part of profile (description) */
 .profile-right {
-    flex-grow: 1; /* Takes the remaining space */
-    max-width: 600px;   /* Limit width of the description */
-    padding-left: 20px; /* Space between the picture and the description */
+    flex: 2;                       /* Right section takes more space */
+    max-width: 600px;               /* Limit the width of the description */
 }
 
-.profile-right p {
+.profile-right .description p {
     font-size: 1.2em;
     line-height: 1.6em;
-    color: var(--text-color);
 }
 
 
