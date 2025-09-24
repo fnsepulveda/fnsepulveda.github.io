@@ -127,6 +127,9 @@ nav ul li a:hover {
 
 /* -------------------- Research / Papers -------------------- */
 
+
+
+
 .paper details { 
     padding: 0; /* no inner box padding */
 }
@@ -253,146 +256,56 @@ footer {
     box-sizing: border-box;
 }
 
-/* -------------------- Desktop Version (default) -------------------- */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+/* -------------------- Responsive -------------------- */
+@media (max-width: 900px) {
+    .content {
+        padding: 28px;
+    }
 }
 
-.main-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.sidebar {
-    width: 250px;
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.sidebar h1 {
-    font-size: 1.8em;
-}
-
-.sidebar img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
-.sidebar .contact-info p {
-    margin: 5px 0;
-}
-
-/* -------------------- Mobile Layout -------------------- */
 @media (max-width: 768px) {
-    /* Sidebar (Top Section - Name, Degree, Menu) */
-    .sidebar {
+    .main-container {
         display: flex;
-        flex-direction: column; /* Stack the elements vertically */
-        align-items: center; /* Center-align all sidebar content */
-        padding: 20px;
+        align-items: flex-start; /* top-align both columns */
     }
 
-    /* Name and Degree */
-    .name-degree {
-        text-align: center; /* Center the text */
-    }
-
-    .name-degree h1 {
-        font-size: 1.6em;
-        margin: 0;
-    }
-
-    .name-degree p {
-        font-size: 1em;
-        margin: 0;
-
-
-
-    }
-
-    /* Menu on top-right */
-    .menu {
-        margin-top: 10px;
-        width: 100%; /* Make the dropdown take full width */
-
-
-    }
-
-    .menu select {
-@@ -296,70 +291,51 @@ footer {
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
+    .sidebar {
+        flex: none;
         width: 100%;
+        padding: 20px 20px 0;
     }
 
-    /* Profile Picture */
+    .content {
+        padding: 24px;
+    }
+
+    .content p:first-of-type {
+    margin-top: 40px; /* adjust to your liking */
+    }
+
+
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
     .profile-picture img {
         width: 150px;
-        height: 150px; /* Square image */
-        border-radius: 50%; /* Circular profile image */
-        object-fit: cover;
-        margin-top: 20px;
-    }
-
-    /* Description Text */
-    .description {
-        text-align: center;
-        padding: 0 20px;
+        height: 150px;  /* keep square on mobile */
     }
 
     .description p {
         font-size: 1em;
-
-        line-height: 1.6em;
     }
 
-    /* Footer Social Links */
-    .footer-icons {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        margin-top: 20px;
+    .section-title,
+    .subsection-title {
+        font-size: 1em;
     }
-
-    .footer-icons a {
-        font-size: 1.2em;
-
-
-
-
-        color: var(--ubc-blue);
-        text-decoration: none;
-    }
-
-    .footer-icons a:hover {
-        color: var(--accent-color);
-    }
-
-    footer {
-
-
-
-
-
-
-        text-align: center;
-        padding: 10px;
-        background-color: var(--ubc-blue);
-        color: white;
-
-
-
-
-
-
-
-
-
-
-
+}
