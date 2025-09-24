@@ -332,8 +332,4 @@ footer {
         color: var(--accent-color);
     }
 
-    /* Hide Sections on Mobile (But Keep Visible on Desktop) */
-    #research, #teaching, #contact {
-        display: none; /* Hide by default on mobile */
-    }
 }
