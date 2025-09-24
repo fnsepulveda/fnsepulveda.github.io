@@ -16,14 +16,22 @@ body {
     padding: 0;
 }
 
-/* -------------------- Profile Container -------------------- */
+* -------------------- Profile Container -------------------- */
 .profile-container {
     display: flex;                /* Use flexbox to position items horizontally */
-    align-items: center;          /* Vertically align content in the center */
-    flex-wrap: wrap;              /* Allow items to wrap if the screen is small */
+    justify-content: space-between; /* Spread items apart */
+    align-items: flex-start;      /* Align items to the top of the container */
     background-color: var(--bg-light);
     padding: 25px;
     margin: 20px 0;
+}
+
+/* Left side (Name, University, Picture, Links) */
+.profile-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 250px; /* Set a fixed width to prevent overflowing */
 }
 
 .profile-container h1 {
@@ -38,19 +46,45 @@ body {
 }
 
 /* Profile Picture Settings */
-.profile-container img {
+.profile-left img {
     width: 220px;  /* Profile picture size */
     height: 220px;
     object-fit: cover;
     border-radius: 50%;  /* Circular image */
-    margin-right: 20px;  /* Space between image and description */
+    margin-bottom: 20px;  /* Space below the image */
 }
 
-/* Description (on the right of the picture) */
-.profile-container .description {
-    flex-grow: 1;
-    max-width: 600px;   /* Limit width of the description */
+/* Links Settings */
+.profile-left .contact-info {
+    margin-top: 15px; /* space above contact info */
 }
+
+.profile-left .contact-info p {
+    margin: 6px 0;
+}
+
+.profile-left .contact-info a {
+    text-decoration: none;
+    color: var(--ubc-blue);
+}
+
+.profile-left .contact-info a:hover {
+    color: var(--accent-color);
+}
+
+/* Right side (Description) */
+.profile-right {
+    flex-grow: 1; /* Takes the remaining space */
+    max-width: 600px;   /* Limit width of the description */
+    padding-left: 20px; /* Space between the picture and the description */
+}
+
+.profile-right p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: var(--text-color);
+}
+
 
 
 .contact-info {
