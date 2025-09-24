@@ -22,30 +22,51 @@
     <div class="main-container">
         <!-- Sidebar with Name, Picture, Contact Info -->
         <aside class="sidebar">
-            <h1>Felipe Sepulveda</h1>
-            <p>PhD Candidate in Economics,</p>
-            <p>University of British Columbia</p>
-            <img src="picture1.jpg" alt="Felipe Sepulveda">
+            <div class="header-mobile">
+                <!-- Top Left: Name and Degree -->
+                <div class="name-degree">
+                    <h1>Felipe Sepulveda</h1>
+                    <p>PhD Candidate in Economics</p>
+                </div>
+
+                <!-- Top Right: Menu (For Mobile) -->
+                <div class="menu">
+                    <select onchange="location = this.value;">
+                        <option value="#research">Research</option>
+                        <option value="#teaching">Teaching</option>
+                        <option value="#contact">Contact</option>
+                    </select>
+                </div>
+            </div>
+
             <div class="contact-info">
-    <p><a href="CV_English_08_2025.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> CV</a></p>
-    <p><a href="mailto:fnsepulveda@uc.cl"><i class="fa-solid fa-envelope"></i> Email</a></p>
-    <p><a href="https://www.linkedin.com/in/felipe-sepúlveda-210b7049/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
-    <p><a href="https://x.com/Fnsepulveda" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter</a></p>
-    <p><a href="https://scholar.google.com/citations?user=SpMJi10AAAAJ&hl=es" target="_blank"><i class="fa-brands fa-google"></i> Google Scholar</a></p>
-</div>
+                <p><a href="CV_English_08_2025.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> CV</a></p>
+                <p><a href="mailto:fnsepulveda@uc.cl"><i class="fa-solid fa-envelope"></i> Email</a></p>
+                <p><a href="https://www.linkedin.com/in/felipe-sepúlveda-210b7049/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
+                <p><a href="https://x.com/Fnsepulveda" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter</a></p>
+                <p><a href="https://scholar.google.com/citations?user=SpMJi10AAAAJ&hl=es" target="_blank"><i class="fa-brands fa-google"></i> Google Scholar</a></p>
+            </div>
         </aside>
 
         <!-- Main Content Area -->
         
+        <!-- Main Content Area -->
         <main class="content">
+            <div class="profile-section">
+                <!-- Profile Picture -->
+                <div class="profile-picture">
+                    <img src="picture1.jpg" alt="Felipe Sepulveda">
+                </div>
 
-        <br><br> 
+                <!-- Description -->
+                <div class="description">
 
         <p>
         I’m a PhD Candidate in Economics at the University of British Columbia, with interests in Urban Economics and Environmental Economics. I hold a Bachelor’s and a Master’s degree in Economics from the Pontifical Catholic University of Chile. 
             
         Before starting my PhD, I worked for five years at FK Economics, where I focused on applied economic research and policy analysis.
         </p>
+                </div>
 
         <br><br>
         
@@ -229,9 +250,15 @@ emissions from the reform.</p>
                 <p>UBC Email: <a href="mailto:fasepu@student.ubc.ca">fasepu@student.ubc.ca</a> </p>
             </section>
 
-            <footer>
-                <p>&copy; 2025 Felipe Sepulveda</p>
-            </footer>
+            <div class="footer-icons">
+    <a href="CV_English_08_2025.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> CV</a>
+    <a href="mailto:fnsepulveda@uc.cl"><i class="fa-solid fa-envelope"></i> Email</a>
+    <a href="https://www.linkedin.com/in/felipe-sepúlveda-210b7049/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+</div>
+
+<footer>
+    <p>&copy; 2025 Felipe Sepulveda</p>
+</footer>
         </main>
     </div>
 
