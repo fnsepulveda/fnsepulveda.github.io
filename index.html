@@ -39,12 +39,42 @@
 
         <main class="content">
 
+         <!-- Mobile Menu (Visible Only on Mobile) -->
+            <div class="mobile-menu">
+                <select onchange="location = this.value;">
+                    <option value="#research">Research</option>
+                    <option value="#teaching">Teaching</option>
+                    <option value="#contact">Contact</option>
+                </select>
+            </div>
+
+            <!-- Name, Degree, Picture, Description -->
+            <section class="mobile-version">
+                <div class="profile">
+                    <h1>Felipe Sepulveda</h1>
+                    <p>PhD Candidate in Economics</p>
+                    <div class="profile-picture">
+                        <img src="picture1.jpg" alt="Felipe Sepulveda">
+                    </div>
+                    <div class="description">
+                        <p>I’m a PhD Candidate in Economics at the University of British Columbia, with interests in Urban Economics and Environmental Economics...</p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="footer-icons">
+                        <a href="CV_English_08_2025.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> CV</a>
+                        <a href="mailto:fnsepulveda@uc.cl"><i class="fa-solid fa-envelope"></i> Email</a>
+                        <a href="https://www.linkedin.com/in/felipe-sepúlveda-210b7049/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </section>
+
+        
         <br><br> 
 
         <p>
         I’m a PhD Candidate in Economics at the University of British Columbia, with interets in Public, Urban, and Environmental economics. I hold a Bachelor’s and a Master’s degree in Economics from the Pontifical Catholic University of Chile. 
-        I’m a PhD Candidate in Economics at the University of British Columbia, with interets in Public, Urban, and Environmental Economics. I hold a Bachelor’s and a Master’s degree in Economics from the Pontifical Catholic University of Chile. 
-
+        
         Before starting my PhD, I worked for five years at FK Economics, where I focused on applied economic research and policy analysis.
         </p>
 
@@ -237,6 +267,14 @@ emissions from the reform.</p>
     </div>
 
     <script>
+        // Mobile Menu functionality
+        document.querySelector('.mobile-menu select').addEventListener('change', function() {
+            const sectionId = this.value;
+            const section = document.querySelector(sectionId);
+            section.style.display = section.style.display === "none" ? "block" : "none";
+        });
+
+        
         function togglePaperDetails(paperId) {
             var selectedPaper = document.getElementById(paperId);
             var selectedTitle = document.querySelector(`[onclick="togglePaperDetails('${paperId}')"]`);
