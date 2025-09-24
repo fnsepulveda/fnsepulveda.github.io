@@ -262,13 +262,14 @@ footer {
 
 @media (max-width: 768px) {
     .main-container {
-        display: flex;
-        align-items: flex-start; /* top-align both columns */
+        flex-direction: column; /* Stack the columns vertically */
+        align-items: flex-start; /* Top-align the elements */
+        padding: 0 20px; /* Adjust the padding for mobile */
     }
 
     .sidebar {
         flex: none;
-        width: 100%;
+        width: 100%; /* Sidebar should take full width on mobile */
         padding: 20px 20px 0;
     }
 
@@ -277,24 +278,22 @@ footer {
     }
 
     .content p:first-of-type {
-    margin-top: 40px; /* adjust to your liking */
+        margin-top: 40px; /* adjust to your liking */
     }
 
-    
-
     .header-container {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Stack header items vertically */
+        text-align: center; /* Center-align text on mobile */
     }
 
     .profile-picture {
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 20px; /* Add space below profile picture */
     }
 
     .profile-picture img {
         width: 150px;
-        height: 150px;  /* keep square on mobile */
+        height: 150px; /* Keep square aspect ratio on mobile */
     }
 
     .description p {
