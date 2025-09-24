@@ -75,7 +75,7 @@ body {
 
 /* Profile Description (Right side) */
 .profile-right .description p {
-    font-size: 1.1em;
+    font-size: 0.95em;
     line-height: 1.6em;
     color: var(--text-color);  /* Ensure the text color is consistent */
 }
