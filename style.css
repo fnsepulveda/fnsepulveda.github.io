@@ -330,6 +330,36 @@ footer {
         margin: 10px 0;
     }
 
+    @media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;  /* Stack elements vertically */
+        align-items: center;     /* Center-align the elements */
+        gap: 0;                  /* Remove the gap between image and description */
+    }
+
+    .profile-left img {
+        margin: 0 0 20px 0;  /* Removed margin-right and added margin-bottom for spacing */
+        width: 150px;         /* Smaller image size for mobile */
+        height: 150px;        /* Maintain aspect ratio */
+    }
+
+    .profile-left h1 {
+        font-size: 1.6em;
+        margin-top: 10px;  /* Ensure spacing above the name */
+    }
+
+    .profile-left p {
+        font-size: 1.2em;
+        color: var(--ubc-blue);
+        margin: 10px 0;
+    }
+
+    .profile-right .description p {
+        font-size: 1em; /* Adjust font size for readability on mobile */
+        text-align: center; /* Center text on mobile */
+    }
+}
+
     /* Profile Picture (Mobile) */
     .profile-picture img {
         width: 150px;  /* Make sure the image is visible on mobile */
