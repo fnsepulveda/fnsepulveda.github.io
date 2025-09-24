@@ -253,55 +253,72 @@ footer {
     box-sizing: border-box;
 }
 
-/* -------------------- Responsive -------------------- */
-@media (max-width: 900px) {
-    .content {
-        padding: 28px;
-    }
-}
-
+/* -------------------- Mobile Header and Menu -------------------- */
 @media (max-width: 768px) {
-    .main-container {
-        flex-direction: column; /* Stack the columns vertically */
-        align-items: flex-start; /* Top-align the elements */
-        padding: 0 20px; /* Adjust the padding for mobile */
-    }
-
-    .sidebar {
-        flex: none;
-        width: 100%; /* Sidebar should take full width on mobile */
-        padding: 20px 20px 0;
-    }
-
-    .content {
-        padding: 24px;
-    }
-
-    .content p:first-of-type {
-        margin-top: 40px; /* adjust to your liking */
-    }
-
+    /* Header Section: Name, Degree, and Menu */
     .header-container {
-        flex-direction: column; /* Stack header items vertically */
-        text-align: center; /* Center-align text on mobile */
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align the content */
+        padding-top: 20px; /* Add space at the top */
     }
 
+    .header-container .name-degree {
+        font-size: 1.6em;
+        font-weight: 600;
+    }
+
+    .header-container .menu {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end; /* Align menu to the right */
+    }
+
+    .menu select {
+        font-size: 1em;
+        background-color: var(--ubc-blue);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /* Profile Picture and Description */
     .profile-picture {
-        margin-right: 0;
-        margin-bottom: 20px; /* Add space below profile picture */
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .profile-picture img {
         width: 150px;
         height: 150px; /* Keep square aspect ratio on mobile */
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .description {
+        text-align: center;
+        padding: 0 20px;
     }
 
     .description p {
         font-size: 1em;
+        line-height: 1.6;
     }
 
-    .section-title,
-    .subsection-title {
-        font-size: 1em;
+    /* Footer: Social Icons */
+    .footer-icons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .footer-icons a {
+        font-size: 1.2em;
+        color: var(--ubc-blue);
+        text-decoration: none;
+    }
+
+    .footer-icons a:hover {
+        color: var(--accent-color);
     }
 }
