@@ -80,7 +80,6 @@ body {
     flex-wrap: wrap;
 }
 
-
 /* Description block */
 .description {
     max-width: 600px;
@@ -126,7 +125,6 @@ nav ul li a:hover {
 }
 
 /* -------------------- Research / Papers -------------------- */
-
 .paper details { 
     padding: 0; /* no inner box padding */
 }
@@ -191,9 +189,7 @@ details[open] .toggle .hide {
     color: #333; 
 }
 
-
-
-/* Sections */
+/* -------------------- Sections -------------------- */
 section {
     margin: 50px 20px;
 }
@@ -253,11 +249,17 @@ footer {
     box-sizing: border-box;
 }
 
-/* -------------------- Mobile Version -------------------- */
+/* -------------------- Responsive -------------------- */
+@media (max-width: 900px) {
+    .content {
+        padding: 28px;
+    }
+}
+
 @media (max-width: 768px) {
     /* Stack sidebar and content vertically on mobile */
     .main-container {
-        display: block; /* Stack content vertically on mobile */
+        display: block; /* Stack the columns vertically */
         padding: 20px;
     }
 
@@ -292,6 +294,13 @@ footer {
 
     .profile h1 {
         font-size: 1.6em;
+        margin: 10px 0;
+    }
+
+    .profile p {
+        font-size: 1.2em;
+        color: var(--ubc-blue);
+        margin: 10px 0;
     }
 
     /* Profile Picture (Mobile) */
@@ -299,7 +308,7 @@ footer {
         width: 150px;  /* Make sure the image is visible on mobile */
         height: 150px; /* Maintain aspect ratio */
         border-radius: 50%;
-        object-fit: cover; /* Ensures image covers the area without distortion */
+        object-fit: cover; /* Ensures image covers the area */
         margin: 20px 0; /* Add spacing around the image */
         display: block;  /* Ensure the image is displayed as a block element */
         margin-left: auto;
@@ -332,14 +341,4 @@ footer {
     #research, #teaching, #contact {
         display: none; /* Hide by default on mobile */
     }
-}
-
-/* -------------------- Desktop Version -------------------- */
-.profile-picture img {
-    width: 220px;  /* Larger size for desktop */
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin: 40px 0; /* Adjust spacing for desktop */
 }
