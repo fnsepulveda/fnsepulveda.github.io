@@ -261,10 +261,7 @@ footer {
         padding: 20px;
     }
 
-    /* Hide Sidebar on Mobile */
-    .sidebar {
-        display: none;
-    }
+    
 
     /* Mobile Menu (Positioned at the Top-Right) */
     .mobile-menu {
