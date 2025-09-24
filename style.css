@@ -255,38 +255,33 @@ footer {
 
 /* -------------------- Mobile Layout -------------------- */
 @media (max-width: 768px) {
-    /* 1. Sidebar (Name, Degree, Menu) */
+    /* Sidebar (Top Section - Name, Degree, Menu) */
     .sidebar {
         display: flex;
-        flex-direction: column; /* Stack sidebar elements vertically */
-        align-items: center; /* Center the content */
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center; /* Center-align all sidebar content */
         padding: 20px;
     }
 
-    .sidebar h1 {
+    /* Name and Degree */
+    .name-degree {
+        text-align: center; /* Center the text */
+    }
+
+    .name-degree h1 {
         font-size: 1.6em;
-        text-align: center; /* Center the name */
+        margin: 0;
     }
 
-    .sidebar p {
+    .name-degree p {
         font-size: 1em;
-        text-align: center; /* Center the degree and university */
+        margin: 0;
     }
 
-    .sidebar img {
-        width: 150px;
-        height: 150px; /* Keep image square */
-        border-radius: 50%; /* Make the image circular */
-        object-fit: cover;
-        margin: 20px 0;
-    }
-
-    /* 2. Add Mobile Navigation Menu */
+    /* Menu on top-right */
     .menu {
         margin-top: 10px;
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
+        width: 100%; /* Make the dropdown take full width */
     }
 
     .menu select {
@@ -296,70 +291,51 @@ footer {
         padding: 10px;
         border: none;
         border-radius: 5px;
-        width: 100%; /* Full width of the sidebar */
+        width: 100%;
     }
 
-    /* 3. Main Content (Description and Research Section) */
-    .content {
-        padding: 20px;
+    /* Profile Picture */
+    .profile-picture img {
+        width: 150px;
+        height: 150px; /* Square image */
+        border-radius: 50%; /* Circular profile image */
+        object-fit: cover;
+        margin-top: 20px;
+    }
+
+    /* Description Text */
+    .description {
+        text-align: center;
+        padding: 0 20px;
     }
 
     .description p {
         font-size: 1em;
-        text-align: center; /* Center-align text */
         line-height: 1.6em;
     }
 
-    /* 4. Footer (Social Icons) */
-    .contact-info {
+    /* Footer Social Links */
+    .footer-icons {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         width: 100%;
         margin-top: 20px;
     }
 
-    .contact-info p {
-        font-size: 1em;
-        text-align: center; /* Center the social links */
-    }
-
-    .contact-info a {
+    .footer-icons a {
+        font-size: 1.2em;
         color: var(--ubc-blue);
         text-decoration: none;
     }
 
-    .contact-info a:hover {
+    .footer-icons a:hover {
         color: var(--accent-color);
     }
 
-    /* 5. Research, Teaching, and Contact Sections */
-    section {
-        margin-bottom: 40px;
-    }
-
-    h2 {
-        font-size: 1.5em;
+    footer {
         text-align: center;
-    }
-
-    h3 {
-        font-size: 1.3em;
-        margin-top: 20px;
-    }
-
-    /* Collapsible section titles (Teaching/Research) */
-    .section-details {
-        display: none; /* Hide by default */
-        padding-left: 30px;
-    }
-
-    .section-title {
-        cursor: pointer;
-        font-size: 1.2em;
-        color: var(--ubc-blue);
-    }
-
-    .section-title:hover {
-        color: var(--accent-color);
+        padding: 10px;
+        background-color: var(--ubc-blue);
+        color: white;
     }
 }
