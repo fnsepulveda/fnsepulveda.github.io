@@ -287,51 +287,68 @@ body {
     margin: 5px 0;
 }
 
-/* -------------------- Mobile Version -------------------- */
+/* -------------------- Mobile Layout -------------------- */
 @media (max-width: 768px) {
-    /* Hide Sidebar for Mobile */
+    /* Sidebar (Top Section - Name, Degree, Menu) */
     .sidebar {
-        display: none;
+        display: flex;
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center; /* Center-align all sidebar content */
+        padding: 20px;
     }
 
-    /* Mobile Menu (Positioned at the Top-Right) */
-    .mobile-menu {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 1000; /* Ensure it's on top */
+    /* Name and Degree */
+    .name-degree {
+        text-align: center; /* Center the text */
     }
 
-    .mobile-menu select {
-        width: 150px;
-        padding: 10px;
+    .name-degree h1 {
+        font-size: 1.6em;
+        margin: 0;
+    }
+
+    .name-degree p {
         font-size: 1em;
-        background-color: var(--ubc-blue);
-        color: white;
+        margin: 0;
+
+
+
+    }
+
+    /* Menu on top-right */
+    .menu {
+        margin-top: 10px;
+        width: 100%; /* Make the dropdown take full width */
+
+
+    }
+
+    .menu select {
+@@ -296,70 +291,51 @@ footer {
+        padding: 10px;
         border: none;
         border-radius: 5px;
+        width: 100%;
     }
 
-    /* Profile Section (Name, Degree, Picture, Description) */
-    .mobile-version .profile {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .profile h1 {
-        font-size: 1.6em;
-    }
-
+    /* Profile Picture */
     .profile-picture img {
         width: 150px;
-        height: 150px;
-        border-radius: 50%;
+        height: 150px; /* Square image */
+        border-radius: 50%; /* Circular profile image */
         object-fit: cover;
-        margin: 20px 0;
+        margin-top: 20px;
+    }
+
+    /* Description Text */
+    .description {
+        text-align: center;
+        padding: 0 20px;
     }
 
     .description p {
         font-size: 1em;
+
         line-height: 1.6em;
     }
 
@@ -339,11 +356,16 @@ body {
     .footer-icons {
         display: flex;
         justify-content: space-evenly;
+        width: 100%;
         margin-top: 20px;
     }
 
     .footer-icons a {
         font-size: 1.2em;
+
+
+
+
         color: var(--ubc-blue);
         text-decoration: none;
     }
@@ -352,8 +374,25 @@ body {
         color: var(--accent-color);
     }
 
-    /* Hide Sections on Mobile (But Keep Visible on Desktop) */
-    #research, #teaching, #contact {
-        display: none; /* Hide by default on mobile */
-    }
-}
+    footer {
+
+
+
+
+
+
+        text-align: center;
+        padding: 10px;
+        background-color: var(--ubc-blue);
+        color: white;
+
+
+
+
+
+
+
+
+
+
+
