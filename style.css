@@ -378,6 +378,20 @@ footer {
         line-height: 1.6em;
     }
 
+   /* Display only icons */
+    .contact-info a {
+        text-decoration: none;
+        font-size: 1.5em;  /* Larger icons */
+        color: var(--ubc-blue);
+    }
+
+    /* Ensure icons are displayed in a row */
+    .contact-info {
+        display: flex;
+        justify-content: center; /* Center-align the icons horizontally */
+        margin-top: 15px;
+    }
+
     /* Footer Social Links */
     .footer-icons {
         display: flex;
@@ -386,7 +400,7 @@ footer {
     }
 
     .footer-icons a {
-        font-size: 1.2em;
+        font-size: 1.5em;  /* Larger icons */
         color: var(--ubc-blue);
         text-decoration: none;
     }
