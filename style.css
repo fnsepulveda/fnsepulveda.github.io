@@ -34,11 +34,13 @@ body {
 
 /* -------------------- Profile Container -------------------- */
 .profile-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 3px; /* Reduced the gap between the left and right sections */
+    display: flex;                /* Use flexbox to position items horizontally */
+    align-items: flex-start;      /* Vertically align content to the top */
+    gap: 5px;                    /* Reduced gap between profile picture and description */
     padding: 25px;
-    margin: 20px 0;
+    margin: 20px auto;            /* Center content and add margin */
+    max-width: 1200px;            /* Set a maximum width for the entire content */
+    width: 90%;                   /* Set a width of 90% to avoid taking up the entire screen */
 }
 
 /* Left part of profile (name, university, contact) */
