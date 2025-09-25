@@ -355,7 +355,8 @@ footer {
     }
 
     .profile-right .description p {
-        font-size: 1em; /* Adjust font size for readability on mobile */
+        font-size: 1.1em; /* Adjust font size for readability on mobile */
+        text-align: left; /* Left-justify the text */
         text-align: center; /* Center text on mobile */
     }
 }
