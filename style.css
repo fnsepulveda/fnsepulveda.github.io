@@ -381,7 +381,7 @@ footer {
    /* Display only icons */
     .contact-info a {
         text-decoration: none;
-        font-size: 1.5em;  /* Larger icons */
+        font-size: 0em;  /* Larger icons */
         color: var(--ubc-blue);
     }
 
